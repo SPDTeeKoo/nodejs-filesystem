@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View timestamps</title>
+  </head>
+  <body>
+    <h1>View all timestamps</h1>
+    <!-- <form action="/timestamps/view">
+      <button id="generateBtn">List all timestamps</button>
+    </form> -->
+    <a href="/timestamps/new">Generate new timestamp</a>
+    <div class="container" id="mainContainer">
+      <% for (let stamp of allTimeStamps){ %>
+      <li><%= stamp %></li>
+      <% } %>
+    </div>
+  </body>
+</html>
